@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Список сообщений</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Пользователи</h2>
+        <!-- Форма заполнения таблицы / добавление данных -->
+        <form name="messageForm">
+            <div class="col-3">
+                <input type="text" class="form-control" name="phoneNumber" required placeholder="Телефонный номер" />
+            </div>
+            <div class="col-3">
+                <input type="text" class="form-control" name="textMessage" required placeholder="Текс сообщения" />
+            </div>
+            <div class="col-3">
+                <input type="text" class="form-control" name="name" required placeholder="Имя получателя" />
+            </div>
+            <div class="col-3">
+                <button type="submit" id="submit" class="btn btn-primary">Отправить</button>
+            </div>
+
+        </form>
+        <!-- Вывод данных -->
+        <table class="table table-condensed table-striped">
+            <thead>
+                <tr>
+                    <th>Дата</th>
+                    <th>Телефонный номер получателя</th>
+                    <th>Тест сообщения</th>
+                    <th>Статус</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <div>Test &copy; 2023</div>
+
+        <script src="script.js"></script>
+
+    </div>
+</body>
+</html>
